@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebAplication.Models.Product>
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<ul>
+    @foreach(var product in Model)
+    {
+    <li>@product.Category - @product.Name</li>
+        
+    }
+</ul>
